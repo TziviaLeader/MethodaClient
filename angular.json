@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "methodaProject"
+    }
+  },
+  "defaultProject": "methodaProject",
+  "cli": {
+    "analytics": "8b643e26-ce0b-4e81-890a-9d4199088e39"
+  }
 }
