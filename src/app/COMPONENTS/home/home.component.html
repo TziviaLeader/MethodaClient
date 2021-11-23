@@ -1,5 +1,5 @@
 <div class="container-fluid" style="border:1px black dashed">
-    <div style="display: inline-block;margin-right: 5%;width: 50%;">
+    <div style="display: inline-block;margin-right: 5%;width: 50%;top: 0;">
         <h1>Statuses List:</h1>
         <div class="form-group">
             <label for="statusName">Status name:</label>
@@ -9,9 +9,9 @@
         </div>
             <div class="card w-50" *ngFor="let s of statuses" style="display: inline-block;">
                 <div class="card-body">
-                  <h5 class="card-title">{{s.name}}</h5>
+                  <h5 class="card-title" style="color: coral;">{{s.name}}</h5>
                   <p class="card-text">{{s.type|flagEnum}}</p>
-                  <input type="button" value="Remove"  class="btn btn-danger" (click)="removeStatus(s.name)">
+                  <input type="button" value="Remove"  class="btn btn-link" (click)="removeStatus(s.name)">
                 </div>
               </div>
     </div>
@@ -39,9 +39,9 @@
         </div>
         <div class="card w-50"  *ngFor="let t of transitions" style="display: inline-block;">
             <div class="card-body">
-              <h5 class="card-title">{{t.name}}</h5>
+              <h5 class="card-title" style="color: crimson;">{{t.name}}</h5>
               <p>{{t.name}}: {{t.fromStatus}} -> {{t.toStatus}}</p>
-              <input type="button" value="Remove"  class="btn btn-danger" (click)="removeTransition(t.name)">
+              <input type="button" value="Remove"  class="btn btn-link" (click)="removeTransition(t.name)">
             </div>
           </div>
     </div>
